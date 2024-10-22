@@ -8,7 +8,9 @@ services:
       db:
         condition: service_started
     ports:
-      - "127.0.0.1:3000:3000"
+      # FIXME listen on loopback only if you've got a reverse proxy or LB setup
+      # - "127.0.0.1:3000:3000"
+      - "0.0.0.0:3000:3000"
     volumes:
       - ./config.edn:/rems/config/config.edn
       - ./styles.css:/rems/theme/styles.css
