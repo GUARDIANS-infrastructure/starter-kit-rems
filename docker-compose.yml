@@ -8,7 +8,7 @@ services:
       db:
         condition: service_started
     ports:
-      # FIXME listen on loopback only if you've got a reverse proxy or LB setup
+      # listen on loopback only if you've got a reverse proxy
       # - "127.0.0.1:3000:3000"
       - "0.0.0.0:3000:3000"
     volumes:
