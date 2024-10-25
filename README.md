@@ -2,7 +2,7 @@
 
 # REMS Starter Kit for GDI
 
-This repository provides a basic local deployment of REMS with GDI branding. This is only provided as an example deployment for getting familiar with REMS, **and should not be used as a production deployment.** A production database should be deployed separately from the application with non-default configurations, and be secured following best practices.
+This repository provides a basic local deployment of REMS with BioCommons branding. This is only provided as an example deployment for getting familiar with REMS, **and should not be used as a production deployment.** A production database should be deployed separately from the application with non-default configurations, and be secured following best practices.
 
 See [REMS repository](https://github.com/CSCfi/rems) for more documentation regarding deployment and configuration options.
 
