@@ -1,15 +1,16 @@
 {:port 3000
-;; FIXME replace with deployed public URL so that OIDC callback will be correct
- :public-url "http://localhost:3000/"
- :database-url "postgresql://db:5432/rems?user=rems&password=remspassword"
+ ;; Configure with deployed public URL so that OIDC callback can work
+ ;; :public-url "http://localhost:3000/"
+ :public-url "__PUBLIC_URL__"
+ :database-url "postgresql://db:5432/__DB_NAME__?user=__DB_USER__&password=__DB_PASSWORD__"
  :search-index-path "/tmp/rems-search-index"
  :authentication :oidc
- ;; FIXME pick an OpenID Provider
+ ;; Configure an OpenID Provider
  ;;:oidc-metadata-url "https://login.aai.lifescience-ri.eu/oidc/.well-known/openid-configuration"
  ;;:oidc-metadata-url "https://accounts.google.com/.well-known/openid-configuration"
- ;; FIXME provide client id and secret from OP config
- :oidc-client-id ""
- :oidc-client-secret ""
+ :oidc-metadata-url "__OIDC_METADATA_URL__"
+ :oidc-client-id "__OIDC_CLIENT_ID__"
+ :oidc-client-secret "__OIDC_CLIENT_SECRET__"
  :oidc-scopes "openid profile email"
  :oidc-userid-attributes [{:attribute "sub"}]
  :oidc-name-attributes ["name" "unique_name" "family_name"]

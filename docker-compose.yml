@@ -8,7 +8,7 @@ services:
       db:
         condition: service_started
     ports:
-      # listen on loopback only if you've got a reverse proxy
+      # listen on loopback only if you've set up a reverse proxy
       # - "127.0.0.1:3000:3000"
       - "0.0.0.0:3000:3000"
     volumes:
@@ -26,9 +26,9 @@ services:
     container_name: rems_db
     image: postgres:13
     environment:
-      POSTGRES_DB: rems
-      POSTGRES_USER: rems
-      POSTGRES_PASSWORD: remspassword
+      POSTGRES_DB: __DB_NAME__
+      POSTGRES_USER: __DB_USER__
+      POSTGRES_PASSWORD: __DB_PASSWORD__
     ports:
       - "127.0.0.1:5432:5432"
     # remove this if you don't want a persistent database
