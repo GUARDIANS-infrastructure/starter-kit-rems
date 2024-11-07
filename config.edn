@@ -20,6 +20,7 @@
  :catalogue-is-public true
  :ga4gh-visa-private-key "/rems/keys/private-key.jwk"
  :ga4gh-visa-public-key "/rems/keys/public-key.jwk"
+ :enable-cart true ; show shopping cart and allow bundling multiple resources into one application
  :enable-permissions-api true
  :enable-pdf-api true
  :enable-catalogue-tree true
