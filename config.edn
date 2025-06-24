@@ -6,6 +6,7 @@
  :search-index-path "/tmp/rems-search-index"
  :authentication :oidc
  ;; Configure an OpenID Provider
+ ;;:oidc-metadata-url "https://test.cilogon.aaf.edu.au/.well-known/openid-configuration"
  ;;:oidc-metadata-url "https://login.aai.lifescience-ri.eu/oidc/.well-known/openid-configuration"
  ;;:oidc-metadata-url "https://accounts.google.com/.well-known/openid-configuration"
  :oidc-metadata-url "${OIDC_METADATA_URL}"

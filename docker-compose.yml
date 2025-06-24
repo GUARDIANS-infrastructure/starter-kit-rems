@@ -17,7 +17,7 @@ services:
       - ./en.edn:/rems/theme/extra-translations/en.edn
       - ./logo_medium.png:/rems/theme/public/img/logo_medium.png
       - ./logo_small.png:/rems/theme/public/img/logo_small.png
-      - ./ls_login.png:/rems/theme/public/img/ls_login.png
+      - ./login.png:/rems/theme/public/img/login.png
       - ./private-key.jwk:/rems/keys/private-key.jwk
       - ./public-key.jwk:/rems/keys/public-key.jwk
 
